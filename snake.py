@@ -122,19 +122,6 @@ def gameOver():
     pygame.display.flip()
     time.sleep(3)
 
-"""         
-
-#Grid 
-def newGrid (): 
-    grid = []
-    for i in range(gridwidth):
-        grid.append([])
-        for j in range(gridheight): 
-            grid[i].append (0) 
-    return grid
-
-grid = newGrid() 
-""" 
 snake = Snake ()
 
 delay = 0.15
@@ -142,11 +129,11 @@ delay = 0.15
 chicken = randomPos()
  
 
-perro1Img = pygame.image.load('perro1.jpg')
+perro1Img = pygame.image.load('files/perro1.jpg')
 perro1Img = pygame.transform.scale(perro1Img, (cellSize, cellSize))
-perro2Img = pygame.image.load('perro2.jpg')
+perro2Img = pygame.image.load('files/perro2.jpg')
 perro2Img = pygame.transform.scale(perro2Img, (cellSize, cellSize))
-chickenImg = pygame.image.load("pollo.png")   
+chickenImg = pygame.image.load("files/pollo.png")   
 chickenImg = pygame.transform.scale (chickenImg, (cellSize, cellSize))
 
 # Score        
